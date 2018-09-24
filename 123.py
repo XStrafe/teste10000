@@ -7,7 +7,6 @@ module.
 
 There are a number of utility commands being showcased here.'''
 bot = commands.Bot(command_prefix='!', description=description)
-lines = open(r'Fortnite.txt').read().splitlines()
 
 @bot.event
 async def on_ready():
@@ -19,6 +18,8 @@ async def on_message(message):
         return
     elif message.content.startswith("!help"):
         await client.send_message(message.channel, "!fornite, !hulu, !spotify, !netflix, !pornhub")
+
+lines = open(r'Fortnite.txt').read().splitlines()
 
 @bot.command(pass_context=True)
 async def fortnite (ctx):
