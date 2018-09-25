@@ -2,7 +2,8 @@ import discord
 from discord.ext import commands
 import random
 
-description = '''Welcome to The Help Command Index
+description = '''css
+Welcome to The Help Command Index
 
 Please See A Staff Member If you have any other problems!
 
