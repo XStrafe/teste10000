@@ -133,28 +133,3 @@ async def minecraft (ctx):
     await bot.send_message(ctx.message.author, embed=embed)
 
 bot.run('NDkzODQ2NTY0MTgwMzI4NDc1.Doq89g.DGtitK6oCc2wFzVfDY38WXQQLao')
-
-@bot.command()
-async def ping(ctx):
-        ': Check your connection '
-        t1 = ctx.message.created_at
-        m = await ctx.send('**Pong!**')
-        time = (m.created_at - t1).total_seconds() * 1000
-        await m.edit(content='**Pong! Took: {}ms**'.format(int(time)))
-        await ctx.message.delete()  
-
-const Discord = require("discord.js");
-
-module.exports.run = async (bot, message, args) => {
-
-  if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply(":x: **Tu dois préciser le nombre de messages à supprimer .**");
-  if(!args[0]) return message.channel.send(":x: **Tu dois préciser le nombre de messages à supprimer .**");
-  message.channel.bulkDelete(args[0]).then(() => {
-  message.channel.send(`:pencil2: ${args[0]} messages on été supprimer.`).then(msg => msg.delete(2000));
-});
-
-}
-
-module.exports.help = {
-  name: "clear"
-}
