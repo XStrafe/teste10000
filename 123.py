@@ -36,7 +36,7 @@ async def fortnite (ctx):
     embed.add_field(name="Password:", value=split[2], inline=False)
     await bot.send_message(ctx.message.author, embed=embed)
 
-    print("{} Typed !fortnite".format(userName))
+    print("{} Typed !gen fortnite".format(userName))
     
 lines = open(r'Spotify.txt').read().splitlines()
 
@@ -55,7 +55,7 @@ async def spotify (ctx):
     embed.add_field(name="Password:", value=split[2], inline=False)
     await bot.send_message(ctx.message.author, embed=embed)
 
-    print("{} Typed !spotify".format(userName))
+    print("{} Typed !gen spotify".format(userName))
 
 lines = open(r'Netflix.txt').read().splitlines()
 
@@ -93,7 +93,7 @@ async def pornhub (ctx):
     embed.add_field(name="Password:", value=split[2], inline=False)
     await bot.send_message(ctx.message.author, embed=embed)
 
-    print("{} Typed !pornhub".format(userName))
+    print("{} Typed !gen pornhub".format(userName))
 
 lines = open(r'Hulu.txt').read().splitlines()
 
