@@ -9,6 +9,13 @@ There are a number of utility commands being showcased here.'''
 bot = commands.Bot(command_prefix='!', description=description)
 lines = open(r'Fortnite.txt').read().splitlines()
 
+bot.on('message', function(message){
+        if{message.content == 'Hello')
+        {
+                message.reply('Hello, how are you?');
+        }
+});
+
 @bot.event
 async def on_ready():
     print("The bot is online!")
