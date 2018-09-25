@@ -34,8 +34,8 @@ async def fortnite (ctx):
     
     embed=discord.Embed(title="StrafeGen - Fornite Account", color=0xff00b6)
     embed.set_thumbnail(url="https://png.icons8.com/color/1600/fortnite.png")
-    embed.add_field(name="Email:", value=split[0], inline=True)
-    embed.add_field(name="Password:", value=split[2], inline=False)
+    embed.add_field(name="Account:", value=split[0], inline=True)
+    embed.add_field(name="Link:", value=split[2], inline=False)
     await bot.send_message(ctx.message.author, embed=embed)
 
     print("{} Typed !fortnite".format(userName))
