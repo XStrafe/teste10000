@@ -6,7 +6,8 @@ description =  ```
 For All Commands Please Contact A Staff Member! 
 
 Made by 
-xStrafeDragon + iBoy21
+xStrafeDragon + iBoy21```
+
 
 bot = commands.Bot(command_prefix='!', description=description)
 lines = open(r'Fortnite.txt').read().splitlines()
