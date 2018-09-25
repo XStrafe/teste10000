@@ -88,7 +88,7 @@ async def pornhub (ctx):
     split = myline.partition(":")
     
     embed=discord.Embed(title="Pornhub Account", color=0xffff00)
-    embed.set_thumbnail(url="https://mbtskoudsalg.com/images/pornhub-logo-png-1.png")
+    embed.set_thumbnail(url="https://mbtskoudsalg.com/image/fortnite-llama-png/639461.html")
     embed.add_field(name="Email:", value=split[0], inline=True)
     embed.add_field(name="Password:", value=split[2], inline=False)
     await bot.send_message(ctx.message.author, embed=embed)
