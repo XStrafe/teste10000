@@ -2,10 +2,10 @@ import discord
 from discord.ext import commands
 import random
 
-description = '''An example bot to showcase the discord.ext.commands extension
-module.
+description = '''css
+Thankyou For Opening The Help Command!
 
-There are a number of utility commands being showcased here.'''
+All Commands Will be Shown Here, Please Read Carefully, Also Read #strafegen-info'''
 bot = commands.Bot(command_prefix='!', description=description)
 lines = open(r'Fortnite.txt').read().splitlines()
 
