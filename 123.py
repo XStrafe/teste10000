@@ -2,11 +2,12 @@ import discord
 from discord.ext import commands
 import random
 
-description = **Hello User! Please read #strafegen-info For Information On Help!
-If you need any other help remember to feel free to contact the staff!**
+description = '''An example bot to showcase the discord.ext.commands extension
+module.
 
-
+There are a number of utility commands being showcased here.'''
 bot = commands.Bot(command_prefix='!', description=description)
+lines = open(r'Fortnite.txt').read().splitlines()
 
 @bot.event
 async def on_ready():
