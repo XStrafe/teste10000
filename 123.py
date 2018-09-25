@@ -2,28 +2,12 @@ import discord
 from discord.ext import commands
 import random
 
-description = 
-```
-Thankyou For Opening The Help Index!
-Note: This is StrafeGen - BETA
-We Are in heavy Developement For The Bot / Program! Thankyou Beta Testers!
+description =  ```
+For All Commands Please Contact A Staff Member! 
 
-All Commands Will be Shown Here, Please Read Carefully, Also Read #strafegen-info
-Command #1 - !fortnite 
-Which will give a randoom Fortnite account from our stock
-Command #2 - !spotify 
-Which will give a randoom Spotify account from our stock
-Command #3 - !Netflix
-Which will give a randoom Netflix account from our stock
-Command #4 - !pornhub
-Which will give a randoom Pornhub account from our stock
-Command #5 - !hulu
-Which will give a randoom Hulu account from our stock
-Command #6 - !minecraft
-Which will give a randoom Minecraft account from our stock
+Made by 
+xStrafeDragon + iBoy21
 
-If you have any other issues please feel free to contact us!
-- Made By iBoy21 + xStrafeDragon'''
 bot = commands.Bot(command_prefix='!', description=description)
 lines = open(r'Fortnite.txt').read().splitlines()
 
