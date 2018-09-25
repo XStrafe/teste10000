@@ -3,6 +3,7 @@ from discord.ext import commands
 import random
 
 description = 
+```
 Thankyou For Opening The Help Index!
 Note: This is StrafeGen - BETA
 We Are in heavy Developement For The Bot / Program! Thankyou Beta Testers!
