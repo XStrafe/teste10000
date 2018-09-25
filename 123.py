@@ -9,13 +9,6 @@ There are a number of utility commands being showcased here.'''
 bot = commands.Bot(command_prefix='!', description=description)
 lines = open(r'Fortnite.txt').read().splitlines()
 
-bot.on('message', function(message){
-        if{message.content == 'Hello')
-        {
-                message.reply('Hello, how are you?');
-        }
-});
-
 @bot.event
 async def on_ready():
     print("The bot is online!")
@@ -140,3 +133,12 @@ async def minecraft (ctx):
     await bot.send_message(ctx.message.author, embed=embed)
 
 bot.run('NDkzODQ2NTY0MTgwMzI4NDc1.Doq89g.DGtitK6oCc2wFzVfDY38WXQQLao')
+
+@bot.command()
+async def ping(ctx):
+        ': Check your connection '
+        t1 = ctx.message.created_at
+        m = await ctx.send('**Pong!**')
+        time = (m.created_at - t1).total_seconds() * 1000
+        await m.edit(content='**Pong! Took: {}ms**'.format(int(time)))
+        await ctx.message.delete()  
