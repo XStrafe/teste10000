@@ -2,16 +2,13 @@ import discord
 from discord.ext import commands
 import random
 
-description =  ```
-For All Commands Please Contact A Staff Member! 
+description = '''Welcome to The Help Command Index
 
-Made by 
-xStrafeDragon + iBoy21```
+Please See A Staff Member If you have any other problems!
 
-
+Made By xStrafeDragon + iBoy21'''
 bot = commands.Bot(command_prefix='!', description=description)
 lines = open(r'Fortnite.txt').read().splitlines()
-
 @bot.event
 async def on_ready():
     print("The bot is online!")
