@@ -2,10 +2,10 @@ import discord
 from discord.ext import commands
 import random
 
-description = '''An example bot to showcase the discord.ext.commands extension
-module.
+description = **Hello User! Please read #strafegen-info For Information On Help!
+If you need any other help remember to feel free to contact the staff!**
 
-There are a number of utility commands being showcased here.'''
+
 bot = commands.Bot(command_prefix='!', description=description)
 
 @bot.event
