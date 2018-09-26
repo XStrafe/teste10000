@@ -30,7 +30,6 @@ async def fortnite (ctx):
 
     if ctx.message.server:
         myline = random.choice(lines)
-    split = myline.partition(":")
     
     embed=discord.Embed(title="StrafeGen - Fornite Account", color=0x00ff40)
     embed.set_thumbnail(url="https://png.icons8.com/color/1600/fortnite.png")
