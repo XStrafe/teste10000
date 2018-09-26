@@ -32,10 +32,10 @@ async def fortnite (ctx):
         myline = random.choice(lines)
     split = myline.partition(":")
     
-    embed=discord.Embed(title="StrafeGen - Fornite Account", color=0xFF00B9)
+    embed=discord.Embed(title="StrafeGen - Fornite Account", color=0x00ff40)
     embed.set_thumbnail(url="https://png.icons8.com/color/1600/fortnite.png")
-    embed.add_field(name="Source:", value=split[0], inline=True)
-    embed.add_field(name="Link:", value=split[2], inline=False)
+    embed.add_field(name="Account details:", value=split[0], inline=True)
+    embed.set_footer(text="Made by iBoy21™#8792")
     await bot.send_message(ctx.message.author, embed=embed)
 
     print("{} Typed !fortnite".format(userName))
