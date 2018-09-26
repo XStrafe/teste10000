@@ -133,4 +133,6 @@ async def minecraft (ctx):
     embed.add_field(name="Link:", value=split[2], inline=False)
     await bot.send_message(ctx.message.author, embed=embed)
 
+    print("{} Typed !hulu".format(userName))
+    
 bot.run('NDkzODQ2NTY0MTgwMzI4NDc1.Doq89g.DGtitK6oCc2wFzVfDY38WXQQLao')
