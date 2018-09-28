@@ -133,6 +133,25 @@ async def minecraft (ctx):
     embed.add_field(name="Link:", value=split[2], inline=False)
     await bot.send_message(ctx.message.author, embed=embed)
 
-    print("{} Typed !hulu".format(userName))
+    print("{} Typed !minecraft".format(userName))
+
+lines = open(r'Udemy.txt').read().splitlines()
+
+@bot.command(pass_context=True)
+async def udemy (ctx):
+    userName = ctx.message.author.name
+    userID = ctx.message.author.id
+
+    if ctx.message.server:
+        myline = random.choice(lines)
+        split = myline.partition("[")
+    
+    embed=discord.Embed(title="StrafeGen - Udemy Account", color=0x00ff40)
+    embed.set_thumbnail(url="")
+    embed.add_field(name="Account details:", value=split[0], inline=True)
+    embed.set_footer(text="Made by StrafeCentral")
+    await bot.send_message(ctx.message.author, embed=embed)
+
+    print("{} Typed !udemy".format(userName))
     
 bot.run('NDkzODQ2NTY0MTgwMzI4NDc1.Doq89g.DGtitK6oCc2wFzVfDY38WXQQLao')
