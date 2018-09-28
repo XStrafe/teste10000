@@ -19,7 +19,7 @@ async def on_message(message):
     if  message.author == client.user:
         return
     elif message.content.startswith("!help"):
-        await client.send_message(message.channel, "!fornite, !hulu, !spotify, !netflix, !pornhub")
+        await client.send_message(message.channel, "!fornite, !hulu, !spotify, !netflix, !pornhub, !udemy")
 
 lines = open(r'Fortnite.txt').read().splitlines()
 
